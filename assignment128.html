@@ -20,13 +20,9 @@
 				var inputNum= prompt("Enter Number: ");
 				document.getElementById("theInput").innerHTML=inputNum;
 
-				do{
 					convertHundreds(inputNum);
 					convertTens(inputNum);
-					convertOnes(inputNum);	
-				}while(inputNum > 0);
-
-				return 0;		
+					//convertOnes(inputNum);		
 
 			}//end of numtoWords
 
