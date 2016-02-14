@@ -175,6 +175,37 @@
 						
 					}
 				}//end of convertOnes
+
+			function wordstoNum(){
+				document.getElementById("box").innerHTML="";			
+				var inputWord= prompt("Enter Number: ");
+				document.getElementById("theInput").innerHTML=inputWord;
+
+				switch(inputWord){
+					case 'zero': document.getElementById("box").innerHTML="0";
+					break;
+					case 'one': document.getElementById("box").innerHTML="1";
+					break;
+					case 'two': document.getElementById("box").innerHTML="2";
+					break;
+					case 'three': document.getElementById("box").innerHTML="3";
+					break;
+					case 'four': document.getElementById("box").innerHTML="4";
+					break;
+					case 'five': document.getElementById("box").innerHTML="5";
+					break;
+					case 'six': document.getElementById("box").innerHTML="6";
+					break;
+					case 'seven': document.getElementById("box").innerHTML="7";
+					break;
+					case 'eight': document.getElementById("box").innerHTML="8";
+					break;
+					case 'nine': document.getElementById("box").innerHTML="9";
+					break;
+					case 'ten': document.getElementById("box").innerHTML="10";
+					break;
+				}
+			}//end of wordstoNum
 		</script>
 	</head>
 	<body>
@@ -186,7 +217,7 @@
 		<div>
 			<form>
 			<input type="button" value="Number to Words" onclick="numtoWords()"/>
-			<input type="button" value="Words to Number" onclick=""/> 
+			<input type="button" value="Words to Number" onclick="wordstoNum()"/> 
 			<input type="button" value="Words to Currency" onclick=""/> 
 			<input type="button" value="Number Delimited" onclick=""/> 
 			</form>
